@@ -1,0 +1,12 @@
+2022-03-04 18:25:18.553 -05:00 [INF] Now listening on: https://localhost:7292
+2022-03-04 18:25:18.610 -05:00 [INF] Now listening on: http://localhost:5251
+2022-03-04 18:25:18.614 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-04 18:25:18.615 -05:00 [INF] Hosting environment: Development
+2022-03-04 18:25:18.615 -05:00 [INF] Content root path: /Users/christianclaudeauex/Projects/elkcore/
+2022-03-04 18:25:24.966 -05:00 [INF] HELLO FROM THE WORLD WIDE WEB
+2022-03-04 18:25:24.972 -05:00 [INF] HTTP GET /Test responded 200 in 25.0044 ms
+2022-03-04 18:25:53.651 -05:00 [INF] HELLO FROM THE WORLD WIDE WEB
+2022-03-04 18:25:53.651 -05:00 [INF] HTTP GET /Test responded 200 in 0.6217 ms
+2022-03-04 18:25:54.847 -05:00 [INF] HELLO FROM THE WORLD WIDE WEB
+2022-03-04 18:25:54.848 -05:00 [INF] HTTP GET /Test responded 200 in 0.3644 ms
+2022-03-04 18:30:54.761 -05:00 [INF] Application is shutting down...
