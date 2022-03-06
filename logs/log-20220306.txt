@@ -1,0 +1,26 @@
+2022-03-06 10:34:22.247 -05:00 [INF] Now listening on: https://localhost:7292
+2022-03-06 10:34:22.300 -05:00 [INF] Now listening on: http://localhost:5251
+2022-03-06 10:34:22.304 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-06 10:34:22.305 -05:00 [INF] Hosting environment: Development
+2022-03-06 10:34:22.305 -05:00 [INF] Content root path: /Users/christianclaudeauex/Projects/elkcore/
+2022-03-06 10:34:40.649 -05:00 [INF] Ypu may proceed
+2022-03-06 10:34:40.657 -05:00 [INF] HTTP GET /Test/sucess responded 200 in 24.9940 ms
+2022-03-06 16:48:56.309 -05:00 [INF] Bad Auth, Please Try again
+2022-03-06 16:48:56.312 -05:00 [INF] HTTP GET /Test/error responded 200 in 15.9039 ms
+2022-03-06 16:49:18.127 -05:00 [INF] Bad Auth, Please Try again
+2022-03-06 16:49:18.127 -05:00 [INF] HTTP GET /Test/error responded 200 in 0.5530 ms
+2022-03-06 16:49:23.738 -05:00 [INF] Ypu may proceed
+2022-03-06 16:49:23.738 -05:00 [INF] HTTP GET /Test/sucess responded 200 in 0.6391 ms
+2022-03-06 16:49:24.461 -05:00 [INF] Ypu may proceed
+2022-03-06 16:49:24.461 -05:00 [INF] HTTP GET /Test/sucess responded 200 in 0.3258 ms
+2022-03-06 16:49:34.147 -05:00 [INF] HELLO FROM THE WORLD WIDE WEB
+2022-03-06 16:49:34.147 -05:00 [INF] HTTP GET /Test responded 200 in 4.0139 ms
+2022-03-06 16:49:34.938 -05:00 [INF] HELLO FROM THE WORLD WIDE WEB
+2022-03-06 16:49:34.938 -05:00 [INF] HTTP GET /Test responded 200 in 0.3050 ms
+2022-03-06 16:49:35.599 -05:00 [INF] HELLO FROM THE WORLD WIDE WEB
+2022-03-06 16:49:35.599 -05:00 [INF] HTTP GET /Test responded 200 in 0.4861 ms
+2022-03-06 16:54:06.740 -05:00 [INF] I'm about to crash!
+2022-03-06 16:54:06.742 -05:00 [INF] HTTP GET /Test/exception responded 200 in 7.8158 ms
+2022-03-06 16:54:11.392 -05:00 [INF] I'm about to crash!
+2022-03-06 16:54:11.393 -05:00 [INF] HTTP GET /Test/exception responded 200 in 0.4631 ms
+2022-03-06 16:54:58.230 -05:00 [INF] Application is shutting down...

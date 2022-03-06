@@ -3,5 +3,7 @@ xpack.reporting.encryptionKey: d00f48663b5d34f0f8e667f5ee18158a
 xpack.security.encryptionKey: b679ca4fa71b343c604980074829512b
 elasticsearch.username: kibana_system
 elasticsearch.password: password
-elasticsearch.hosts: [ "http://0.0.0.0:9200" ]
+elasticsearch.hosts: [ "http://elasticsearch:9200" ]
+server.host: 0.0.0.0
+server.name: kibana
 monitoring.ui.container.elasticsearch.enabled: true

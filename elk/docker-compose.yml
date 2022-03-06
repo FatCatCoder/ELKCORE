@@ -51,9 +51,8 @@ services:
       - elasticsearch
     environment:
       discovery.type: "single-node"
-      network.host: 0.0.0.0
       SERVER_HOST: 0.0.0.0
-      KIBANA_SYSTEM_PASSWORD: "password"
+      KIBANA_SYSTEM_PASSWORD: password
       SERVER_NAME: kibana
       ELASTICSEARCH_HOSTS: "http://elasticsearch:9200"
     networks:
