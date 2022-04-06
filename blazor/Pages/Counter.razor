@@ -1,0 +1,28 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    public HttpClient client = new HttpClient(){ };
+    
+    class Testobj
+    {
+        public string message {get;set;}
+    }
+
+    private async Task IncrementCount()
+    {
+        Testobj tester = new Testobj{ message = "hi" };
+        //requestMessage.SetBrowserRequestCredentials(BrowserRequestCredentials.Include);
+        await client.PostAsJsonAsync("https://localhost:7292/test/ingest", tester);
+        currentCount++;
+    }
+}
