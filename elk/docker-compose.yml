@@ -23,7 +23,7 @@ services:
       http_cors_allow-headers: X-Requested-With,X-Auth-Token,Content-Type,Content-Length
       http_cors_allow-credentials: true
     networks:
-      - elk
+      - elasticsearch
 
   logstash:
     image: docker.elastic.co/logstash/logstash:8.0.0
@@ -40,7 +40,7 @@ services:
       LS_JAVA_OPTS: -Xmx256m -Xms256m
       LOGSTASH_INTERNAL_PASSWORD: 'password'
     networks:
-      - elk
+      - elasticsearch
     depends_on:
       - elasticsearch
 
@@ -51,7 +51,7 @@ services:
     volumes:
       - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro,Z
     ports:
-      - 5601:5601
+      - 127.0.0.1:5601:5601
     depends_on:
       - elasticsearch
     environment:
@@ -61,12 +61,26 @@ services:
       SERVER_NAME: kibana
       ELASTICSEARCH_HOSTS: "http://elasticsearch:9200"
     networks:
-      - elk
+      - elasticsearch
+    depends_on:
+      - elasticsearch
+
+  nginx:
+    container_name: nginx
+    hostname: nginx
+    image: nginx
+    ports:
+      - 80:80
+      # - 443:443
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - elasticsearch
     depends_on:
       - elasticsearch
     
 networks:
-  elk:
+  elasticsearch:
     driver: bridge
 
 volumes:
